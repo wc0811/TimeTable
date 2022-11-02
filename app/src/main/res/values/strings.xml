@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TimeTable</string>
+    <string name="double_exit">再次点击,将退出程序</string>
 </resources>
