@@ -12,7 +12,6 @@ import javax.inject.Inject
 
 @HiltViewModel
 class SplashViewModel @Inject constructor() : ViewModel() {
-
     private val _navigateToNext = MutableStateFlow(false)
     val navigateToNext: StateFlow<Boolean> = _navigateToNext
 

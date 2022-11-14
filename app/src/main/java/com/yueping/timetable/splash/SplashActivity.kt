@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.dlasit.qamb.app.common.base.BaseActivity
+import com.yueping.timetable.MainActivity
 import com.yueping.timetable.common.ext.navigateTo
 import com.yueping.timetable.databinding.ActivitySplashBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -26,7 +27,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
         lifecycleScope.launchWhenResumed {
             viewModel.navigateToNext.collect {
                 if (it) {
-                    navigateTo<SplashActivity>(isFinish = true)
+                    navigateTo<MainActivity>(isFinish = true)
                 }
             }
         }
