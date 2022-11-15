@@ -7,6 +7,75 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">@color/white</item>
     </style>
+
+    <style name="CmnIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="CmnButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/common_button_height</item>
+        <item name="android:layout_marginStart">@dimen/common_button_horizontal_space</item>
+        <item name="android:layout_marginEnd">@dimen/common_button_horizontal_space</item>
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/common_text_size</item>
+    </style>
     //endregion [Common]
+
+    //region [Login]
+
+    <style name="LoginTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">240dp</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textColor">@color/theme</item>
+        <item name="android:textSize">@dimen/login_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="autoSizeMaxTextSize">@dimen/login_title_text_size</item>
+        <item name="autoSizeMinTextSize">14sp</item>
+        <item name="autoSizeStepGranularity">@dimen/login_title_interval_text_size</item>
+        <item name="autoSizeTextType">uniform</item>
+    </style>
+
+    <style name="CmnConstraintLayoutLogin">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/common_edittext_height</item>
+        <item name="android:layout_marginStart">@dimen/common_space</item>
+        <item name="android:layout_marginEnd">@dimen/common_space</item>
+        <item name="android:background">@drawable/bg_login_edittext</item>
+    </style>
+
+
+    <style name="LoginIcon" parent="CmnIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CmnEdittextLogin">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textColor">@color/cmn_login_text_color</item>
+        <item name="android:textColorHint">@color/cmn_login_text_color</item>
+        <item name="android:layout_marginStart">@dimen/common_icon_space</item>
+        <item name="android:layout_marginEnd">@dimen/common_space</item>
+        <item name="android:background">@drawable/bg_login_edittext</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingStart">@dimen/common_edit_padding_start</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/common_small_text_size</item>
+    </style>
+
+    <style name="CmnButton.Login" parent="CmnButton">
+        <item name="android:layout_marginTop">@dimen/login_edit_out_space</item>
+    </style>
+
+    //endregion [Login]
+
 
 </resources>

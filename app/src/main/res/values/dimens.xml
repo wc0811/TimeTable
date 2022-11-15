@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_smaller_text_size">12sp</dimen>
+    <dimen name="common_small_text_size">14sp</dimen>
+    <dimen name="common_text_size">16sp</dimen>
+    <dimen name="common_middle_text_size">18sp</dimen>
+    <dimen name="common_large_text_size">22sp</dimen>
+    <dimen name="common_title_text_size">20sp</dimen>
+    <dimen name="login_title_text_size">30sp</dimen>
+    <dimen name="login_title_small_text_size">20sp</dimen>
+    <dimen name="login_title_interval_text_size">2sp</dimen>
+
+
+    <dimen name="common_button_height">44dp</dimen>
+    <dimen name="common_padding">8dp</dimen>
+    <dimen name="common_survey_padding">4dp</dimen>
+    <dimen name="common_line_height">1dp</dimen>
+    <dimen name="common_edittext_height">60dp</dimen>
+    <dimen name="common_space">22dp</dimen>
+    <dimen name="common_inner_space">32dp</dimen>
+    <dimen name="common_icon_space">8dp</dimen>
+    <dimen name="common_edit_padding_start">2dp</dimen>
+    <dimen name="common_button_vertical_space">32dp</dimen>
+    <dimen name="common_button_horizontal_space">40dp</dimen>
+    <dimen name="common_title_height">48dp</dimen>
+    <dimen name="common_reminder_start">52dp</dimen>
+    <dimen name="common_back_icon_space">12dp</dimen>
+    <dimen name="common_progress_size">35dp</dimen>
+
+
+    <dimen name="login_edit_inner_space">16dp</dimen>
+    <dimen name="login_edit_out_space">48dp</dimen>
+
+    <dimen name="home_icon_height">100dp</dimen>
+    <dimen name="mail_item_height">60dp</dimen>
+    <dimen name="home_text_space">40dp</dimen>
+    <dimen name="mail_button_space">60dp</dimen>
+
+    <dimen name="survey_title_type_space">32dp</dimen>
+    <dimen name="survey_reminder_title_space">48dp</dimen>
+    <dimen name="survey_reminder_space">32dp</dimen>
+    <dimen name="survey_start_button_space">48dp</dimen>
+    <dimen name="survey_button_space">48dp</dimen>
+    <dimen name="survey_button_size">120dp</dimen>
+    <dimen name="survey_tab_indicator_height">2dp</dimen>
+
+    <dimen name="survey_start_edit_space">32dp</dimen>
+    <dimen name="survey_search_edit_height">35dp</dimen>
+    <dimen name="survey_search_edit_space">48dp</dimen>
+    <dimen name="survey_start_line_space">40dp</dimen>
+    <dimen name="survey_start_top_space">32dp</dimen>
+    <dimen name="mail_space">32dp</dimen>
+    <dimen name="mail_icon_space">8dp</dimen>
+    <dimen name="personal_top">32dp</dimen>
+    <dimen name="personal_item_space">12dp</dimen>
+    <dimen name="personal_item_height">52dp</dimen>
+    <dimen name="personal_button_space">40dp</dimen>
+    <dimen name="personal_image_size">18dp</dimen>
+    <dimen name="mail_item_top">6dp</dimen>
+    <dimen name="mail_item_content_top">6dp</dimen>
+
+</resources>

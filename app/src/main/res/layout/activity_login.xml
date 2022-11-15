@@ -1,4 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Space xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainView"
+    style="@style/CmnRootView">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/LoginTitle"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/ivUserName"
+        style="@style/LoginIcon"
+        android:layout_marginStart="@dimen/common_inner_space"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_login_user"
+        app:layout_constraintBottom_toBottomOf="@id/edtUserName"
+        app:layout_constraintEnd_toStartOf="@id/edtUserName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edtUserName" />
+
+    <EditText
+        android:id="@+id/edtUserName"
+        style="@style/CmnEdittextLogin"
+        android:autofillHints="@null"
+        android:hint="@string/login_input_username_hint"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivUserName"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+
+    <ImageView
+        android:id="@+id/ivUserPassword"
+        style="@style/LoginIcon"
+        android:layout_marginStart="@dimen/common_inner_space"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_login_password"
+        app:layout_constraintBottom_toBottomOf="@id/edtUserPassword"
+        app:layout_constraintEnd_toStartOf="@id/edtUserPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edtUserPassword" />
+
+    <EditText
+        android:id="@+id/edtUserPassword"
+        style="@style/CmnEdittextLogin"
+        android:layout_marginTop="16dp"
+        android:autofillHints="@null"
+        android:hint="@string/login_input_user_password"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivUserPassword"
+        app:layout_constraintTop_toBottomOf="@id/edtUserName" />
+
+    <TextView
+        android:id="@+id/btnLogin"
+        style="@style/CmnButton.Login"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivUserPassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>
