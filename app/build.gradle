@@ -65,11 +65,15 @@ dependencies {
     // Lifecycles only (without ViewModel or LiveData)
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
 
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
 
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.8.1'
 
     implementation 'com.google.code.gson:gson:2.9.0'
+    //region [splashscreen]
+    implementation 'androidx.core:core-splashscreen:1.0.0-beta02'
+    //endregion [splashscreen]
+
 }
 
 
