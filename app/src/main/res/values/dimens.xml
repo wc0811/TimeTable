@@ -19,7 +19,7 @@
     <dimen name="common_space">22dp</dimen>
     <dimen name="common_inner_space">32dp</dimen>
     <dimen name="common_icon_space">8dp</dimen>
-    <dimen name="common_edit_padding_start">2dp</dimen>
+    <dimen name="common_edit_padding_start">8dp</dimen>
     <dimen name="common_button_vertical_space">32dp</dimen>
     <dimen name="common_button_horizontal_space">40dp</dimen>
     <dimen name="common_title_height">48dp</dimen>

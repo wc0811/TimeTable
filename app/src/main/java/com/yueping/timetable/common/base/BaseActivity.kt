@@ -9,7 +9,7 @@ import com.yueping.timetable.common.Constants.WAIT_TIME
 import com.yueping.timetable.common.base.IView
 
 abstract class BaseActivity<BindingType : ViewBinding> : AppCompatActivity(), IView {
-    private lateinit var binding: BindingType
+    lateinit var binding: BindingType
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

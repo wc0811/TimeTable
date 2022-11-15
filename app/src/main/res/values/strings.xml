@@ -3,6 +3,9 @@
     <string name="double_exit">再次点击,将退出程序</string>
     <string name="login_input_username_hint">Please Input UserName</string>
     <string name="login_input_user_password">Please Input Password</string>
-    <string name="login">Login</string>
-
+    <string name="login">LOGIN</string>
+    <string name="login_failed">Login Failed, Please try again!</string>
+    <string name="login_user_name_error">Please Input UserName</string>
+    <string name="login_user_password_error">Please Input Password</string>
+    <string name="login_user_password_length_error">Wrong Password,Please try again! </string>
 </resources>

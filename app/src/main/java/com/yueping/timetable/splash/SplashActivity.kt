@@ -7,6 +7,7 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.yueping.timetable.MainActivity
 import com.yueping.timetable.common.ext.navigateTo
 import com.yueping.timetable.databinding.ActivitySplashBinding
+import com.yueping.timetable.login.LoginActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
@@ -19,6 +20,6 @@ class SplashActivity : AppCompatActivity() {
         val binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
         splashScreen.setKeepOnScreenCondition { true }
-        navigateTo<MainActivity>(isFinish = true)
+        navigateTo<LoginActivity>(isFinish = true)
     }
 }
