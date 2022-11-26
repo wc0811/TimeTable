@@ -1,14 +1,13 @@
-package com.yueping.timetable.login
+package com.yueping.timetable.module.login
 
 import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.dlasit.qamb.app.common.base.BaseActivity
 import com.yueping.timetable.BuildConfig
-import com.yueping.timetable.MainActivity
 import com.yueping.timetable.R
 import com.yueping.timetable.common.ext.*
 import com.yueping.timetable.databinding.ActivityLoginBinding
-import com.yueping.timetable.login.status.LoginParameterError
+import com.yueping.timetable.module.login.status.LoginParameterError
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
@@ -62,7 +61,7 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>() {
 
     private fun handleLoginStatus() {
         viewModel.loginSuccess.launchAndCollectIn(this) {
-            navigateTo<MainActivity>(isFinish = true)
+            navigateTo<LoginActivity>(isFinish = true)
         }
     }
 

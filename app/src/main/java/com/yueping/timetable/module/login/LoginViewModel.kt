@@ -1,7 +1,7 @@
-package com.yueping.timetable.login
+package com.yueping.timetable.module.login
 
 import androidx.lifecycle.ViewModel
-import com.yueping.timetable.login.status.LoginParameterError
+import com.yueping.timetable.module.login.status.LoginParameterError
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharedFlow

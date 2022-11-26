@@ -1,13 +1,12 @@
-package com.yueping.timetable.splash
+package com.yueping.timetable.module
 
 import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.yueping.timetable.MainActivity
 import com.yueping.timetable.common.ext.navigateTo
 import com.yueping.timetable.databinding.ActivitySplashBinding
-import com.yueping.timetable.login.LoginActivity
+import com.yueping.timetable.module.login.LoginActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
