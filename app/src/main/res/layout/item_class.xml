@@ -9,7 +9,7 @@
         android:id="@+id/tvName"
         style="@style/CmnText"
         android:layout_marginStart="@dimen/common_space"
-        android:layout_marginTop="@dimen/common_space"
+        android:layout_marginTop="@dimen/common_inner_space"
         android:textColor="@color/theme_red"
         android:textSize="@dimen/common_middle_text_size"
         android:textStyle="bold"
