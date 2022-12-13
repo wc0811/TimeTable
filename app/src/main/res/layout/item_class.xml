@@ -1,16 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/mainView"
-    style="@style/CmnRootView">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/tvName"
-        style="@style/CardView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/CmnText"
+        android:layout_marginStart="@dimen/common_space"
+        android:layout_marginTop="@dimen/common_space"
+        android:textColor="@color/theme_red"
+        android:textSize="@dimen/common_middle_text_size"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="王超" />
+
+    <TextView
+        android:id="@+id/tvGrade"
+        style="@style/CmnText"
+        android:textColor="@color/theme_red"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvName"
+        app:layout_constraintStart_toEndOf="@id/tvName"
+        tools:text="高三" />
+
+    <TextView
+        android:id="@+id/tvSex"
+        style="@style/CmnText"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvName"
+        app:layout_constraintStart_toEndOf="@id/tvGrade"
+        tools:text="男" />
+
+    <TextView
+        android:id="@+id/tvSchool"
+        style="@style/CmnText"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvName"
+        app:layout_constraintStart_toEndOf="@id/tvSex"
+        tools:text="8中" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        style="@style/CmnText"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvName"
+        app:layout_constraintStart_toEndOf="@id/tvSchool"
+        tools:text="90分" />
+
+    <TextView
+        android:id="@+id/tvCultivate"
+        style="@style/CmnText"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvName"
+        app:layout_constraintStart_toEndOf="@id/tvScore"
+        tools:text="学大教育" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        style="@style/CmnText"
+        android:layout_marginStart="@dimen/common_space"
+        android:layout_marginTop="@dimen/common_inner_space"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        tools:text="上课时间段:8-10" />
+
+    <TextView
+        android:id="@+id/tvClassHour"
+        style="@style/CmnText"
+        android:layout_marginStart="@dimen/common_space"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvTime"
+        app:layout_constraintStart_toEndOf="@id/tvTime"
+        tools:text="时长：1.5h" />
+
+    <TextView
+        android:id="@+id/tvSummaryClassHour"
+        style="@style/CmnText"
+        android:layout_marginStart="@dimen/common_space"
+        android:layout_marginTop="@dimen/common_inner_space"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTime"
+        tools:text="总时长:16h" />
+
+    <TextView
+        android:id="@+id/tvSummaryNumber"
+        style="@style/CmnText"
+        android:layout_marginStart="@dimen/common_inner_space"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvSummaryClassHour"
+        app:layout_constraintStart_toEndOf="@id/tvSummaryClassHour"
+        tools:text="总次数:8次" />
+
+    <TextView
+        android:id="@+id/tvSummary"
+        style="@style/CmnText"
+        android:layout_marginStart="@dimen/common_space"
+        android:layout_marginTop="@dimen/common_inner_space"
+        android:layout_marginEnd="@dimen/common_space"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSummaryClassHour"
+        tools:text="课时记录:1月2号（1.5h）" />
+
+    <TextView
+        android:id="@+id/tvRemarks"
+        style="@style/CmnText"
+        android:layout_marginStart="@dimen/common_space"
+        android:layout_marginTop="@dimen/common_inner_space"
+        android:layout_marginEnd="@dimen/common_space"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1.1"
+        android:maxLines="1"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSummary"
+        tools:text="备注: 上课状态非常认真" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2px"
+        android:layout_marginHorizontal="@dimen/common_item_vertical_space"
+        android:layout_marginTop="@dimen/common_inner_space"
+        android:background="@color/theme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRemarks" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

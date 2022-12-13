@@ -24,6 +24,23 @@
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/common_text_size</item>
     </style>
+
+    <style name="CmnTitle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/common_title_height</item>
+        <item name="android:background">@color/theme</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/common_middle_text_size</item>
+    </style>
+
+    <style name="CmnText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_small_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginStart">@dimen/common_inner_space</item>
+    </style>
     //endregion [Common]
 
     //region [Login]

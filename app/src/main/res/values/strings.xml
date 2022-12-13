@@ -8,4 +8,5 @@
     <string name="login_user_name_error">Please Input UserName</string>
     <string name="login_user_password_error">Please Input Password</string>
     <string name="login_user_password_length_error">Wrong Password,Please try again! </string>
+    <string name="course">course</string>
 </resources>
