@@ -55,7 +55,7 @@
         tools:text="学大教育" />
 
     <TextView
-        android:id="@+id/tvTime"
+        android:id="@+id/tvCourseTime"
         style="@style/CmnText"
         android:layout_marginStart="@dimen/common_space"
         android:layout_marginTop="@dimen/common_inner_space"
@@ -71,8 +71,8 @@
         android:layout_marginStart="@dimen/common_space"
         android:textColor="@color/teal_700"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@id/tvTime"
-        app:layout_constraintStart_toEndOf="@id/tvTime"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvCourseTime"
+        app:layout_constraintStart_toEndOf="@id/tvCourseTime"
         tools:text="时长：1.5h" />
 
     <TextView
@@ -83,7 +83,7 @@
         android:textColor="@color/teal_700"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTime"
+        app:layout_constraintTop_toBottomOf="@id/tvCourseTime"
         tools:text="总时长:16h" />
 
     <TextView

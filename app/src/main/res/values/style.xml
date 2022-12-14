@@ -78,7 +78,7 @@
         <item name="android:layout_height">48dp</item>
         <item name="android:textColor">@color/cmn_login_text_color</item>
         <item name="android:textColorHint">@color/cmn_login_text_color</item>
-        <item name="android:layout_marginStart">@dimen/common_icon_space</item>
+        <item name="android:layout_marginStart">@dimen/common_space</item>
         <item name="android:layout_marginEnd">@dimen/common_space</item>
         <item name="android:background">@drawable/bg_login_edittext</item>
         <item name="android:maxLines">1</item>

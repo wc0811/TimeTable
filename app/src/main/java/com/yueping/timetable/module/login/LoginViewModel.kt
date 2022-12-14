@@ -29,7 +29,9 @@ class LoginViewModel @Inject constructor() : ViewModel() {
             _loginParameterError.emit(LoginParameterError.PASSWORD_LENGTH_ERROR)
             return
         }
-        if (userName == "yueping" && password == "123456" && deviceId == "01234567890123456789") {
+        if (userName == "yueping" && password == "123456"
+//            && deviceId == "01234567890123456789"
+        ) {
             _loginSuccess.emit(true)
         }
     }

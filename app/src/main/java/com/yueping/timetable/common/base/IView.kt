@@ -7,12 +7,14 @@ interface IView {
 
     fun init() {
         initPreparation()
+        initView()
         observeFlow()
         initData()
         initAction()
     }
 
     fun initPreparation()
+    fun initView()
     fun observeFlow()
     fun initData()
     fun initAction()

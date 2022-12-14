@@ -27,6 +27,9 @@ abstract class BaseActivity<BindingType : ViewBinding> : AppCompatActivity(), IV
     override fun initPreparation() {
     }
 
+    override fun initView() {
+    }
+
     override fun initData() {
     }
 
