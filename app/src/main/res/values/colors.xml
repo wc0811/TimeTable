@@ -12,6 +12,7 @@
     <color name="ic_launcher_background">@color/white</color>
 
     <color name="theme">#048BEC</color>
+    <color name="login_icon_hint">#C7D4DD</color>
     <color name="cmn_line_color">#EBEBEB</color>
     <color name="theme_half">#0F187AC0</color>
     <color name="cmn_text_color">#9FA5AA</color>

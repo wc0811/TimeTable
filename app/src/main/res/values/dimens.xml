@@ -13,6 +13,7 @@
     <dimen name="common_item_vertical_space">16dp</dimen>
 
 
+    <dimen name="common_height">48dp</dimen>
     <dimen name="common_button_height">44dp</dimen>
     <dimen name="common_padding">8dp</dimen>
     <dimen name="common_survey_padding">4dp</dimen>
@@ -23,13 +24,13 @@
     <dimen name="common_edit_padding_start">8dp</dimen>
     <dimen name="common_button_vertical_space">32dp</dimen>
     <dimen name="common_button_horizontal_space">40dp</dimen>
-    <dimen name="common_title_height">48dp</dimen>
+    <dimen name="common_title_height">@dimen/common_height</dimen>
     <dimen name="common_reminder_start">52dp</dimen>
     <dimen name="common_back_icon_space">12dp</dimen>
     <dimen name="common_progress_size">35dp</dimen>
 
 
-    <dimen name="login_edit_out_space">48dp</dimen>
+    <dimen name="login_edit_out_space">@dimen/common_height</dimen>
 
     <dimen name="home_icon_height">100dp</dimen>
     <dimen name="mail_item_height">60dp</dimen>
@@ -37,16 +38,16 @@
     <dimen name="mail_button_space">60dp</dimen>
 
     <dimen name="survey_title_type_space">32dp</dimen>
-    <dimen name="survey_reminder_title_space">48dp</dimen>
+    <dimen name="survey_reminder_title_space">@dimen/common_height</dimen>
     <dimen name="survey_reminder_space">32dp</dimen>
-    <dimen name="survey_start_button_space">48dp</dimen>
-    <dimen name="survey_button_space">48dp</dimen>
+    <dimen name="survey_start_button_space">@dimen/common_height</dimen>
+    <dimen name="survey_button_space">@dimen/common_height</dimen>
     <dimen name="survey_button_size">120dp</dimen>
     <dimen name="survey_tab_indicator_height">2dp</dimen>
 
     <dimen name="survey_start_edit_space">32dp</dimen>
     <dimen name="survey_search_edit_height">35dp</dimen>
-    <dimen name="survey_search_edit_space">48dp</dimen>
+    <dimen name="survey_search_edit_space">@dimen/common_height</dimen>
     <dimen name="survey_start_line_space">40dp</dimen>
     <dimen name="survey_start_top_space">32dp</dimen>
     <dimen name="mail_space">32dp</dimen>

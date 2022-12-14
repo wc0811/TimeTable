@@ -78,7 +78,7 @@
         <item name="android:layout_height">48dp</item>
         <item name="android:textColor">@color/cmn_login_text_color</item>
         <item name="android:textColorHint">@color/cmn_login_text_color</item>
-        <item name="android:layout_marginStart">@dimen/common_icon_space</item>
+        <item name="android:layout_marginStart">@dimen/common_space</item>
         <item name="android:layout_marginEnd">@dimen/common_space</item>
         <item name="android:background">@drawable/bg_login_edittext</item>
         <item name="android:maxLines">1</item>
@@ -92,6 +92,23 @@
         <item name="android:layout_marginTop">@dimen/login_edit_out_space</item>
     </style>
 
+
+    <style name="InputLayoutUserLogin">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="EdittextLogin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_edittext_height</item>
+        <item name="android:inputType">textAutoComplete|textCapWords</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">@dimen/common_inner_space</item>
+        <item name="android:background">@drawable/bg_login_edittext</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginHorizontal">@dimen/common_space</item>
+    </style>
     //endregion [Login]
 
 

@@ -7,6 +7,7 @@ import com.yueping.timetable.BuildConfig
 import com.yueping.timetable.R
 import com.yueping.timetable.common.ext.*
 import com.yueping.timetable.databinding.ActivityLoginBinding
+import com.yueping.timetable.module.course.CourseActivity
 import com.yueping.timetable.module.login.status.LoginParameterError
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -61,7 +62,7 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>() {
 
     private fun handleLoginStatus() {
         viewModel.loginSuccess.launchAndCollectIn(this) {
-            navigateTo<LoginActivity>(isFinish = true)
+            navigateTo<CourseActivity>(isFinish = true)
         }
     }
 

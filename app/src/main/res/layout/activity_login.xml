@@ -12,51 +12,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <ImageView
-        android:id="@+id/ivUserName"
-        style="@style/LoginIcon"
-        android:layout_marginStart="@dimen/common_inner_space"
-        android:contentDescription="@null"
-        android:src="@drawable/ic_login_user"
-        app:layout_constraintBottom_toBottomOf="@id/edtUserName"
-        app:layout_constraintEnd_toStartOf="@id/edtUserName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/edtUserName" />
-
-    <EditText
-        android:id="@+id/edtUserName"
-        style="@style/CmnEdittextLogin"
-        android:autofillHints="@null"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputLayoutUserName"
+        style="@style/InputLayoutUserLogin"
         android:hint="@string/login_input_username_hint"
-        android:inputType="text"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/ivUserName"
-        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
-
-
-    <ImageView
-        android:id="@+id/ivUserPassword"
-        style="@style/LoginIcon"
-        android:layout_marginStart="@dimen/common_inner_space"
-        android:contentDescription="@null"
-        android:src="@drawable/ic_login_password"
-        app:layout_constraintBottom_toBottomOf="@id/edtUserPassword"
-        app:layout_constraintEnd_toStartOf="@id/edtUserPassword"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/edtUserPassword" />
+        app:layout_constraintTop_toBottomOf="@id/tvTitle">
 
-    <EditText
-        android:id="@+id/edtUserPassword"
-        style="@style/CmnEdittextLogin"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtUserName"
+            style="@style/EdittextLogin" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputLayoutPassword"
+        style="@style/InputLayoutUserLogin"
+        android:hint="@string/login_input_username_hint"
         android:layout_marginTop="16dp"
-        android:autofillHints="@null"
-        android:hint="@string/login_input_user_password"
-        android:inputType="textPassword"
-        android:maxLength="20"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/ivUserPassword"
-        app:layout_constraintTop_toBottomOf="@id/edtUserName" />
+        app:endIconMode="password_toggle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextInputLayoutUserName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtUserPassword"
+            style="@style/EdittextLogin"
+            android:maxLength="20" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <TextView
         android:id="@+id/btnLogin"
@@ -64,5 +51,5 @@
         android:text="@string/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivUserPassword" />
+        app:layout_constraintTop_toBottomOf="@id/TextInputLayoutPassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>
