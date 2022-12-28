@@ -12,6 +12,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/iv_Add"
+        style="@style/CmnMenuIcon"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTitle" />
+
     <com.scwang.smart.refresh.layout.SmartRefreshLayout
         android:id="@+id/smartRefreshLayout"
         android:layout_width="match_parent"
