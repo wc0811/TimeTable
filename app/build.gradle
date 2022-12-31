@@ -79,7 +79,10 @@ dependencies {
     implementation 'io.github.scwang90:refresh-header-classics:2.0.5'    //经典刷新头
     implementation 'io.github.scwang90:refresh-header-radar:2.0.5'       //雷达刷新头
     //endregion [Refresh List]
-
+    // Room libraries
+    implementation "androidx.room:room-runtime:2.4.3"
+    kapt "androidx.room:room-compiler:2.4.3"
+    implementation "androidx.room:room-ktx:2.4.3"
 }
 
 

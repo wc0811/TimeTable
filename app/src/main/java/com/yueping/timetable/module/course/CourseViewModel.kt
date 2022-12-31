@@ -2,7 +2,7 @@ package com.yueping.timetable.module.course
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.yueping.timetable.module.course.data.CourseEntity
+import com.yueping.timetable.module.course.data.room.CourseEntity
 import com.yueping.timetable.module.course.data.usecase.CourseUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers

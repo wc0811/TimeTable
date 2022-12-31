@@ -3,7 +3,7 @@ package com.yueping.timetable.module.course.list
 import android.annotation.SuppressLint
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.yueping.timetable.module.course.data.CourseEntity
+import com.yueping.timetable.module.course.data.room.CourseEntity
 
 class CourseAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private var list: MutableList<CourseEntity> = mutableListOf()

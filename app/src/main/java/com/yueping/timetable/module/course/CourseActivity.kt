@@ -10,7 +10,7 @@ import com.yueping.timetable.common.ext.navigateTo
 import com.yueping.timetable.common.ext.noDoubleClickListener
 import com.yueping.timetable.databinding.ActivityCourseBinding
 import com.yueping.timetable.module.course.add.CourseAddActivity
-import com.yueping.timetable.module.course.data.CourseEntity
+import com.yueping.timetable.module.course.data.room.CourseEntity
 import com.yueping.timetable.module.course.list.CourseAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
